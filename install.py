@@ -1,4 +1,4 @@
-import.os
+import os
 tgreen = '\033[32m'
 print( tgreen + "installing dependencies")
 os.system("apt install cowsay")

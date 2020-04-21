@@ -17,4 +17,4 @@ printf "\e[1;92m recorded video are available in /sdcard/camhack/uploads folder\
 printf "\n"
 printf "\e[1;92m Don't delete camhack folder in your sdcard\e[0m\n"
 printf "\n"
-php -S localhost:6060 > /sdcard/camhack
+php -S localhost:4576 -t /sdcard/camhack

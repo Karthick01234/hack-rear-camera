@@ -5,11 +5,11 @@ record video file from victim and
 send to listener
 
 #usage
-git clone https://github.com/Karthick01234/camhack
-cd camhack
-chmod +x install.py
-python2 install.py
-python2 startup.py
+git clone https://github.com/Karthick01234/camhack &&
+cd camhack && 
+chmod +x install.py && 
+python2 install.py 
+
 
 This tool start server run as localhost before you
 send to victim portforwading is must
@@ -26,7 +26,7 @@ The link send to victim is start with https don't
 send the link start with http
 
 common error in starting ngrok in termux to rectify this
-error befort start ngrok turn on your hotspot
+error before start ngrok turn on your hotspot
 
 
 

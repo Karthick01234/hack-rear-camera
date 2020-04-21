@@ -20,7 +20,7 @@ print(" ")
 print( tgreen + "Don't delete camhack folder in your sdcard")
 print(" ")
 
-print( tgreen + "start manually php server by command ")
+print( tgreen + "To avoid error and proper work start manually php server by command ")
 
 print(" ")
 

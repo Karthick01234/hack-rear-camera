@@ -1,4 +1,4 @@
-import.os
+import os
 tgreen = '\033[32m'
 print(" ")
 print( tgreen + "This tool is only for educational purpose")

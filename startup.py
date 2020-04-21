@@ -19,6 +19,10 @@ print( tgreen + "recorded video are available in /sdcard/camhack/uploads folder"
 print(" ")
 print( tgreen + "Don't delete camhack folder in your sdcard")
 print(" ")
-os.system("php -S 127.0.0.1:4576 -t /sdcard/camhack")
+
+print( tgreen + "start manually php server by command ")
+
+print(" ")
 
 
+print("php -S localhost:4576 -t /sdcard/camhack")

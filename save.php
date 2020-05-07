@@ -98,8 +98,7 @@ function selfInvoker()
         return;
     }
 	else {
-		header("location: n.html");
-        echo 'success';
+          echo 'success';
 	}
 }
 selfInvoker();

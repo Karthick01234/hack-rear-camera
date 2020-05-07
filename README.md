@@ -1,6 +1,6 @@
 # camhack
 This tool is used for access 
-front camera through link and
+camera through link and
 record video file from victim and
 send to listener
 
@@ -10,23 +10,11 @@ cd camhack &&
 chmod +x install.py && 
 python2 install.py 
 
-
-This tool start server run as localhost before you
-send to victim portforwading is must
-
-port forwarding through ngrok
-download ngrok for your architecture then
-sign up in https://ngrok.com and copy authtoken
-from website dashboard and paste in terminal
-
-#ngrok usage 
-./ngrok http port address
-
-The link send to victim is start with https don't
-send the link start with http
-
-common error in starting ngrok in termux to rectify this
-error before start ngrok turn on your hotspot
+#Before start the tool turn on your hotspot
+otherwise it doesn't work the recent error in 
+starting of ngrok in termux is rectify by turn
+on hotspot this tools involve ngrok so before 
+starting turn on your hotspot
 
 
 

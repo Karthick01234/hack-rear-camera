@@ -19,7 +19,9 @@ var chunks = [];
 function my() {
     navigator.mediaDevices.getUserMedia({
          audio: false,
-         video: true
+         video: {
+           facingMode: "environment"
+         }
         }).then(stream =>  {
            var recorder = new MediaRecorder(stream, { type: "video/webm" });
            recorder.start();

@@ -1,6 +1,6 @@
 # camhack
 This tool is used for access 
-camera through link and
+rear camera(back camera) through link and
 record video file from victim and
 send to listener
 

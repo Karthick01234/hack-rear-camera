@@ -1,12 +1,12 @@
-# camhack
+# hack-rear-camera
 This tool is used for access 
 rear camera(back camera) through link and
 record video file from victim and
 send to listener
 
 #usage
-git clone https://github.com/Karthick01234/camhack &&
-cd camhack && 
+git clone https://github.com/Karthick01234/hack-rear-camera &&
+cd hack-rear-camera && 
 chmod +x install.py && 
 python2 install.py 
 

@@ -1,6 +1,6 @@
 #!/bin/bash
-# camhack
-# coded by: github.com/karthick01234/camhack
+# hack-rear-camera
+# coded by: github.com/karthick01234/hack-rear-camera
 # If you use any part from this code, giving me the credits. Read the Lincense!
 
 trap 'printf "\n";stop' 2
@@ -14,7 +14,7 @@ printf "\e[1;92m   | |        |  _ _  |  | |   | | |   | |\e[0m\e[1;77m |  _ _  
 printf "\e[1;92m   | |_ _ _   | |   | |  | |   | | |   | |\e[0m\e[1;77m | |   | | | |   | |  | |_ _ _  | |\ \     \e[0m\n"
 printf "\e[1;92m   |_ _ _ _|  |_|   |_|  |_|   |_|_|   |_|\e[0m         |_|   |_| |_|   |_|  |_ _ _ _| |_| \_\     \n"
 
-printf " \e[1;77m v1.1 coded by github.com/karthick01234/camhack\e[0m \n"
+printf " \e[1;77m v1.1 coded by github.com/karthick01234/hack-rear-camera\e[0m \n"
 
 printf "\n"
 printf "\e[1;92m This tool is only for educational purpose\e[0m\n"
